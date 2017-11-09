@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D73A6331FB43B8A00BFB451 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3D73A6321FB43B8A00BFB451 /* Podfile */; };
+		3D7EF2AFE8016A5BFC2E10D3 /* libPods-ThTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F096955E3CFF8049CE6F18 /* libPods-ThTask.a */; };
 		3DBC1BF01FB420E10021B28E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC1BEF1FB420E10021B28E /* AppDelegate.swift */; };
 		3DBC1BF21FB420E10021B28E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC1BF11FB420E10021B28E /* ViewController.swift */; };
 		3DBC1BF51FB420E10021B28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC1BF31FB420E10021B28E /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D403F851FB45F5900B8621F /* ThTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThTask.entitlements; sourceTree = "<group>"; };
+		3D73A6321FB43B8A00BFB451 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3D73A6341FB43EDF00BFB451 /* ThTask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThTask-Bridging-Header.h"; sourceTree = "<group>"; };
 		3DBC1BEC1FB420E00021B28E /* ThTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBC1BEF1FB420E10021B28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DBC1BF11FB420E10021B28E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		3DBC1BF61FB420E10021B28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DBC1BF91FB420E10021B28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DBC1BFB1FB420E10021B28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F096955E3CFF8049CE6F18 /* libPods-ThTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1038D77E6CCDECDC8614D4 /* Pods-ThTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThTask/Pods-ThTask.debug.xcconfig"; sourceTree = "<group>"; };
+		F367A6852512A76D52A9CA10 /* Pods-ThTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThTask/Pods-ThTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7EF2AFE8016A5BFC2E10D3 /* libPods-ThTask.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		156FBFB3C78702D8E58E2741 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE1038D77E6CCDECDC8614D4 /* Pods-ThTask.debug.xcconfig */,
+				F367A6852512A76D52A9CA10 /* Pods-ThTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3DBC1BE31FB420E00021B28E = {
 			isa = PBXGroup;
 			children = (
+				3D73A6321FB43B8A00BFB451 /* Podfile */,
 				3DBC1BEE1FB420E00021B28E /* ThTask */,
 				3DBC1BED1FB420E00021B28E /* Products */,
+				156FBFB3C78702D8E58E2741 /* Pods */,
+				99CB5836A7FA566E99246D52 /* Frameworks */,
+				3D73A6341FB43EDF00BFB451 /* ThTask-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +76,7 @@
 		3DBC1BEE1FB420E00021B28E /* ThTask */ = {
 			isa = PBXGroup;
 			children = (
+				3D403F851FB45F5900B8621F /* ThTask.entitlements */,
 				3DBC1BEF1FB420E10021B28E /* AppDelegate.swift */,
 				3DBC1BF11FB420E10021B28E /* ViewController.swift */,
 				3DBC1BF31FB420E10021B28E /* Main.storyboard */,
@@ -64,6 +87,14 @@
 			path = ThTask;
 			sourceTree = "<group>";
 		};
+		99CB5836A7FA566E99246D52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48F096955E3CFF8049CE6F18 /* libPods-ThTask.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DBC1BFE1FB420E10021B28E /* Build configuration list for PBXNativeTarget "ThTask" */;
 			buildPhases = (
+				D71CA860D08D4B4C200A76FC /* [CP] Check Pods Manifest.lock */,
 				3DBC1BE81FB420E00021B28E /* Sources */,
 				3DBC1BE91FB420E00021B28E /* Frameworks */,
 				3DBC1BEA1FB420E00021B28E /* Resources */,
+				4EAB4A1625BA1B11682C756E /* [CP] Embed Pods Frameworks */,
+				AD8E6A8FACB2A6D78A6BC18D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +130,16 @@
 				TargetAttributes = {
 					3DBC1BEB1FB420E00021B28E = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,11 +168,63 @@
 			files = (
 				3DBC1BFA1FB420E10021B28E /* LaunchScreen.storyboard in Resources */,
 				3DBC1BF71FB420E10021B28E /* Assets.xcassets in Resources */,
+				3D73A6331FB43B8A00BFB451 /* Podfile in Resources */,
 				3DBC1BF51FB420E10021B28E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EAB4A1625BA1B11682C756E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThTask/Pods-ThTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD8E6A8FACB2A6D78A6BC18D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThTask/Pods-ThTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D71CA860D08D4B4C200A76FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DBC1BE81FB420E00021B28E /* Sources */ = {
@@ -272,14 +367,19 @@
 		};
 		3DBC1BFF1FB420E10021B28E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1038D77E6CCDECDC8614D4 /* Pods-ThTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ThTask/ThTask.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64443H3TSF;
+				DEVELOPMENT_TEAM = 2X3Q4BR4VK;
 				INFOPLIST_FILE = ThTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dongwang.ThTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taoheung.task;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThTask-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +387,18 @@
 		};
 		3DBC1C001FB420E10021B28E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F367A6852512A76D52A9CA10 /* Pods-ThTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ThTask/ThTask.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64443H3TSF;
+				DEVELOPMENT_TEAM = 2X3Q4BR4VK;
 				INFOPLIST_FILE = ThTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dongwang.ThTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taoheung.task;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThTask-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
