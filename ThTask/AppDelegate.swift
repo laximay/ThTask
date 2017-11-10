@@ -35,8 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, JPUSHRegisterDelegate {
         
         JPUSHService.setup(withOption: launchOptions,
                            appKey: "887334c3619788c5e1f76f8b", //這條是測試的KEY，生成版本需要更換
-            channel: "app store",
-            apsForProduction: false)
+            channel: "1",
+            apsForProduction: true)
        
         return true
     }
