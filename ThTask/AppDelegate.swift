@@ -33,8 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, JPUSHRegisterDelegate {
             JPUSHService.register(forRemoteNotificationTypes: type, categories: nil)
         }
         
+       
+        application.applicationIconBadgeNumber = 0;
+        JPUSHService.resetBadge()
+        
         JPUSHService.setup(withOption: launchOptions,
-                           appKey: "887334c3619788c5e1f76f8b", //這條是測試的KEY，生成版本需要更換
+                           appKey: "887334c3619788c5e1f76f8b",
             channel: "1",
             apsForProduction: true)
        
@@ -52,7 +56,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, JPUSHRegisterDelegate {
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        application.applicationIconBadgeNumber = 0;
+        JPUSHService.resetBadge()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -85,6 +90,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, JPUSHRegisterDelegate {
      */
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         JPUSHService.handleRemoteNotification(userInfo)
+       
         completionHandler(.newData)  
         
     }
@@ -109,9 +115,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, JPUSHRegisterDelegate {
         let userInfo = response.notification.request.content.userInfo
         if (response.notification.request.trigger?.isKind(of: UNPushNotificationTrigger.self))!{
             JPUSHService.handleRemoteNotification(userInfo)
+            JPUSHService.resetBadge()
+            
+           
         }
         completionHandler()
     }
+    
+    
 
 
 }
