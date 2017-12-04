@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		3D73A6331FB43B8A00BFB451 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3D73A6321FB43B8A00BFB451 /* Podfile */; };
-		3D7EF2AFE8016A5BFC2E10D3 /* libPods-ThTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F096955E3CFF8049CE6F18 /* libPods-ThTask.a */; };
+		3D8D34E21FD52CE700EFACF4 /* DwStartRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D34DF1FD52CE700EFACF4 /* DwStartRootClass.swift */; };
+		3D8D34E31FD52CE700EFACF4 /* DwStartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D34E01FD52CE700EFACF4 /* DwStartData.swift */; };
+		3D8D34E41FD52CE700EFACF4 /* DwStartAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D34E11FD52CE700EFACF4 /* DwStartAd.swift */; };
+		3D8D34E81FD5319600EFACF4 /* ApiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D34E71FD5319600EFACF4 /* ApiUtil.swift */; };
 		3DBC1BF01FB420E10021B28E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC1BEF1FB420E10021B28E /* AppDelegate.swift */; };
 		3DBC1BF21FB420E10021B28E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC1BF11FB420E10021B28E /* ViewController.swift */; };
 		3DBC1BF51FB420E10021B28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC1BF31FB420E10021B28E /* Main.storyboard */; };
 		3DBC1BF71FB420E10021B28E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC1BF61FB420E10021B28E /* Assets.xcassets */; };
 		3DBC1BFA1FB420E10021B28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC1BF81FB420E10021B28E /* LaunchScreen.storyboard */; };
+		9C4815A6BE0919D21C5C4554 /* Pods_ThTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1A7F06D40F560B260E544 /* Pods_ThTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D403F851FB45F5900B8621F /* ThTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThTask.entitlements; sourceTree = "<group>"; };
 		3D73A6321FB43B8A00BFB451 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3D73A6341FB43EDF00BFB451 /* ThTask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThTask-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D8D34DF1FD52CE700EFACF4 /* DwStartRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DwStartRootClass.swift; sourceTree = "<group>"; };
+		3D8D34E01FD52CE700EFACF4 /* DwStartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DwStartData.swift; sourceTree = "<group>"; };
+		3D8D34E11FD52CE700EFACF4 /* DwStartAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DwStartAd.swift; sourceTree = "<group>"; };
+		3D8D34E71FD5319600EFACF4 /* ApiUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtil.swift; sourceTree = "<group>"; };
+		3D8D34E91FD548FD00EFACF4 /* ThTask-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ThTask-Bridging-Header.h"; sourceTree = "<group>"; };
 		3DBC1BEC1FB420E00021B28E /* ThTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBC1BEF1FB420E10021B28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DBC1BF11FB420E10021B28E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,9 +35,9 @@
 		3DBC1BF61FB420E10021B28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DBC1BF91FB420E10021B28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DBC1BFB1FB420E10021B28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48F096955E3CFF8049CE6F18 /* libPods-ThTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1038D77E6CCDECDC8614D4 /* Pods-ThTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThTask/Pods-ThTask.debug.xcconfig"; sourceTree = "<group>"; };
 		F367A6852512A76D52A9CA10 /* Pods-ThTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThTask/Pods-ThTask.release.xcconfig"; sourceTree = "<group>"; };
+		F5B1A7F06D40F560B260E544 /* Pods_ThTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D7EF2AFE8016A5BFC2E10D3 /* libPods-ThTask.a in Frameworks */,
+				9C4815A6BE0919D21C5C4554 /* Pods_ThTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,15 +61,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3D8D34DE1FD52CC000EFACF4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D34E11FD52CE700EFACF4 /* DwStartAd.swift */,
+				3D8D34E01FD52CE700EFACF4 /* DwStartData.swift */,
+				3D8D34DF1FD52CE700EFACF4 /* DwStartRootClass.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		3DBC1BE31FB420E00021B28E = {
 			isa = PBXGroup;
 			children = (
+				3D8D34E91FD548FD00EFACF4 /* ThTask-Bridging-Header.h */,
 				3D73A6321FB43B8A00BFB451 /* Podfile */,
 				3DBC1BEE1FB420E00021B28E /* ThTask */,
 				3DBC1BED1FB420E00021B28E /* Products */,
 				156FBFB3C78702D8E58E2741 /* Pods */,
 				99CB5836A7FA566E99246D52 /* Frameworks */,
-				3D73A6341FB43EDF00BFB451 /* ThTask-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +94,7 @@
 		3DBC1BEE1FB420E00021B28E /* ThTask */ = {
 			isa = PBXGroup;
 			children = (
+				3D8D34DE1FD52CC000EFACF4 /* model */,
 				3D403F851FB45F5900B8621F /* ThTask.entitlements */,
 				3DBC1BEF1FB420E10021B28E /* AppDelegate.swift */,
 				3DBC1BF11FB420E10021B28E /* ViewController.swift */,
@@ -83,6 +102,7 @@
 				3DBC1BF61FB420E10021B28E /* Assets.xcassets */,
 				3DBC1BF81FB420E10021B28E /* LaunchScreen.storyboard */,
 				3DBC1BFB1FB420E10021B28E /* Info.plist */,
+				3D8D34E71FD5319600EFACF4 /* ApiUtil.swift */,
 			);
 			path = ThTask;
 			sourceTree = "<group>";
@@ -90,7 +110,7 @@
 		99CB5836A7FA566E99246D52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48F096955E3CFF8049CE6F18 /* libPods-ThTask.a */,
+				F5B1A7F06D40F560B260E544 /* Pods_ThTask.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,9 +202,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ThTask/Pods-ThTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
+				"${BUILT_PRODUCTS_DIR}/ZLaunchAdVC/ZLaunchAdVC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZLaunchAdVC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -233,6 +260,10 @@
 			files = (
 				3DBC1BF21FB420E10021B28E /* ViewController.swift in Sources */,
 				3DBC1BF01FB420E10021B28E /* AppDelegate.swift in Sources */,
+				3D8D34E81FD5319600EFACF4 /* ApiUtil.swift in Sources */,
+				3D8D34E21FD52CE700EFACF4 /* DwStartRootClass.swift in Sources */,
+				3D8D34E31FD52CE700EFACF4 /* DwStartData.swift in Sources */,
+				3D8D34E41FD52CE700EFACF4 /* DwStartAd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,10 +404,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ThTask/ThTask.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2X3Q4BR4VK;
+				DEVELOPMENT_TEAM = 64443H3TSF;
 				INFOPLIST_FILE = ThTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.taoheung.task;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taoheung.hongkan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ThTask-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -393,10 +424,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ThTask/ThTask.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2X3Q4BR4VK;
+				DEVELOPMENT_TEAM = 64443H3TSF;
 				INFOPLIST_FILE = ThTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.taoheung.task;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taoheung.hongkan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ThTask-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

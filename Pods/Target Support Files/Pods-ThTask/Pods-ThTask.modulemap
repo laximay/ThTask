@@ -1,0 +1,6 @@
+framework module Pods_ThTask {
+  umbrella header "Pods-ThTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

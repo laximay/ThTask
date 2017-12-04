@@ -33,7 +33,7 @@ class ViewController: UIViewController , WKUIDelegate, WKNavigationDelegate {
         view.addSubview(progressView)
         webview.autoresizingMask = [.flexibleHeight]
         webview.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
-        let url = "http://task.dongwangtech.com:8081/TaskManage/appPage/login.jsp"
+        let url = ApiUtil.openUrl
         webview.load(URLRequest.init(url: URL.init(string: url)!))
         
       
@@ -72,33 +72,33 @@ class ViewController: UIViewController , WKUIDelegate, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         //print("加载完成")
         //调用h5的localStorage.getItem
-        webview.evaluateJavaScript("localStorage.getItem('loginCode');") { (any, err) in
-           
-            
-            if let result: String  = any as? String {
-            if  result.count > 0 {
-                
-             
-                let defaults = UserDefaults.standard
-                guard (defaults.string(forKey: "alias") != nil) else {
-                   return  defaults.set("alias" ,forKey: "alias")
-                }
-                
-                let alias_l: String = defaults.string(forKey: "alias")!
-                print("返回值:\(result.lowercased() ) 别名\(alias_l)")
-                if result.lowercased() != alias_l{
-                         print("返回值_in:\(result.lowercased() ) 别名\(alias_l)")
-                        JPUSHService.setAlias(result.lowercased(),
-                                              callbackSelector: #selector(self.tagsAliasCallBack(resCode:tags:alias:)),
-                                              object: self)
-                }
-                
-            }else{
-                let defaults = UserDefaults.standard
-                defaults.set("alias" ,forKey: "alias")
-            }
-        }
-        }
+//        webview.evaluateJavaScript("localStorage.getItem('loginCode');") { (any, err) in
+//
+//
+//            if let result: String  = any as? String {
+//            if  result.count > 0 {
+//
+//
+//                let defaults = UserDefaults.standard
+//                guard (defaults.string(forKey: "alias") != nil) else {
+//                   return  defaults.set("alias" ,forKey: "alias")
+//                }
+//
+//                let alias_l: String = defaults.string(forKey: "alias")!
+//                print("返回值:\(result.lowercased() ) 别名\(alias_l)")
+//                if result.lowercased() != alias_l{
+//                         print("返回值_in:\(result.lowercased() ) 别名\(alias_l)")
+//                        JPUSHService.setAlias(result.lowercased(),
+//                                              callbackSelector: #selector(self.tagsAliasCallBack(resCode:tags:alias:)),
+//                                              object: self)
+//                }
+//
+//            }else{
+//                let defaults = UserDefaults.standard
+//                defaults.set("alias" ,forKey: "alias")
+//            }
+//        }
+//        }
         
     }
     
