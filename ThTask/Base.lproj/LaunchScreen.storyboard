@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thlogo" translatesAutoresizingMaskIntoConstraints="NO" id="jYH-A4-HL2">
-                                <rect key="frame" x="20" y="557" width="335" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thlogo_tw" translatesAutoresizingMaskIntoConstraints="NO" id="jYH-A4-HL2">
+                                <rect key="frame" x="20" y="582" width="335" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="4rP-be-Agi"/>
+                                    <constraint firstAttribute="height" constant="75" id="4rP-be-Agi"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -39,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="thlogo" width="816" height="258"/>
+        <image name="thlogo_tw" width="2488" height="596"/>
     </resources>
 </document>
